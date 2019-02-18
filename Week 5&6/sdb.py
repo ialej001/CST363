@@ -92,7 +92,13 @@ class BitMap:
             if self.array[i] == 1:
                 return i
         return -1
-        
+
+    def reserve(self, rowid):
+        self.array[rowid] = 2
+
+    def unreserve(self, rowid):
+        self.array[rowid] = 0
+
     def unreserveAll(self):
         for i in range(4096):
             if self.array[i] == 2:

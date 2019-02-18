@@ -24,7 +24,7 @@ class SimpleDBV():
         self.row_history = dict()       # key=rowid, value=list of committed change records
         self.transactions = dict()      # key=tranid (versionid), value = list of change records
         self.sdb.b1.unreserveAll()
-        self.next_version_id = 1;
+        self.next_version_id = 1
           
     def create(self):
         self.sdb.create()
@@ -42,21 +42,22 @@ class SimpleDBV():
     def insertRow(self, row, version_id):
         rowid = self.sdb.b1.findSpace(0)
         self.sdb.b1.reserve(rowid)
-        cr = ChangeRecord(trnid, ChangeRecord.INSERT, rowid, row.getRaw())
-        self.transactions[trnid].append(cr)
+        cr = ChangeRecord(version_id, ChangeRecord.INSERT, rowid, row.getRaw())
+        self.transactions[version_id].append(cr)
         return rowid
         #return self.sdb.insertRow(row)
           
     def deleteRow(self, rowid, version_id):
-        cr = ChangeRecord(trnid, ChangeRecord.DELETE, rowid, b'')
-        self.transactions[trnid].append(cr)
+        cr = ChangeRecord(version_id, ChangeRecord.DELETE, rowid, b'')
+        self.transactions[version_id].append(cr)
         return True
         #return self.sdb.deleteRow(rowid)
           
     def updateRow(self, rowid, new_row, version_id):
-        cr = ChangeRecord(trnid, ChangeRecord.BEFORE, rowid, new_row.getRaw())
-        self.transactions[trnid].append(cr)
-        return True #self.sdb.updateRow(rowid, new_row)
+        cr = ChangeRecord(version_id, ChangeRecord.UPDATE, rowid, new_row.getRaw())
+        self.transactions[version_id].append(cr)
+        return True
+        #return self.sdb.updateRow(rowid, new_row)
           
     def startTransaction(self):
         trnid = self.getNextId()
@@ -69,13 +70,23 @@ class SimpleDBV():
         return trnid          
           
     def commit(self, version_id):
-        return False
-        
-    def rollback(self, version_id):
-        for cr in self.transactions[trnid]:
-            if cr.kind == ChangeRecord.INSERT:
-                self.sdb.b1.unreserve(cr.rowid)
-            del self.transactions[trnid]
-        #return True
+        for record in self.transactions[version_id]:
+            #print(type(record.change))
+            if record.kind == 1:  # insert
+                self.sdb.insertRawRowId(record.rowid, record.change)
+                self.sdb.b1.__setitem__(record.rowid, 1)
+                continue
+            if record.kind == 2:  # update
+                self.sdb.updateRow(record.rowid, record.change)
+                continue
+            if record.kind == 3:  # delete
+                self.sdb.deleteRow(record.rowid)
+                continue
         return True
         
+    def rollback(self, version_id):
+        for cr in self.transactions[version_id]:
+            if cr.kind == ChangeRecord.INSERT:
+                self.sdb.b1.unreserve(cr.rowid)
+        del self.transactions[version_id]
+        return True

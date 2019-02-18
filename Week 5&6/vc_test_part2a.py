@@ -46,12 +46,15 @@ class TestSdbVC(unittest.TestCase):
         rowid2 = self.db.insertRow(Row(self.db.schema, [20, "david", "math", 25]), trnid)
         rowid3 = self.db.insertRow(Row(self.db.schema, [30, "ana", "cs", 45]), trnid)
         self.assertTrue(self.db.commit(trnid))
+        print('update 1:')
+        self.db.print()
         trnid2 = self.db.startTransaction()
         row1 = self.db.getRow(rowid1, trnid2)
         row1.values[3] = 14
         self.db.updateRow(rowid1, row1, trnid2)
         self.db.deleteRow(rowid3, trnid2)
         self.assertTrue(self.db.commit(trnid2))
+        self.db.print()
         # check that rowid1 has been changed and rowid3 has been deleted
         trnid3 = self.db.startTransaction()
         rowt3 = self.db.getRow(rowid1, trnid3)
@@ -89,11 +92,14 @@ class TestSdbVC(unittest.TestCase):
         # this test does updates and delete and inserts 
         # a concurrent transaction verifies that the changes
         # are not in the actual databsae until after commit
+        self.db.print()
+        print(self.db.transactions)
         trnid=self.db.startTransaction()
         rowid1 = self.db.insertRow(Row(self.db.schema, [10, "tom", "cs", 10]), trnid)
         rowid2 = self.db.insertRow(Row(self.db.schema, [20, "david", "math", 25]), trnid)
         rowid3 = self.db.insertRow(Row(self.db.schema, [30, "ana", "cs", 45]), trnid)
         self.assertTrue(self.db.commit(trnid))
+        print(self.db.transactions)
         trnid2 = self.db.startTransaction()
         row1 = self.db.getRow(rowid1, trnid2)
         row1.values[3] = 14
@@ -101,6 +107,7 @@ class TestSdbVC(unittest.TestCase):
         self.db.deleteRow(rowid3, trnid2)
         rowid4 = self.db.insertRow(Row(self.db.schema, [40, "juhi", "cs", 60]), trnid2)
         # verify changes have not been made yet to the actual database
+        print(self.db.transactions)
         trnid3 = self.db.startTransaction()
         rowt3 = self.db.getRow(rowid1, trnid3)
         self.assertEqual(rowt3.values[3], 10)
@@ -108,12 +115,13 @@ class TestSdbVC(unittest.TestCase):
         self.assertEqual(rowt3.values[0], 30)
         self.assertFalse(self.db.getRow(rowid4, trnid3))
         self.assertEqual(self.db.sdb.b1.array[rowid4],2)
-        self.assertTrue(self.db.rollback(trnid3))  
+        self.assertTrue(self.db.rollback(trnid3))
         self.assertTrue(self.db.commit(trnid2))
         # trnid2 has committed. Now the changes are made to actual database
+        #self.db.print()
         trnid4 = self.db.startTransaction()
         self.assertEqual(self.db.getRow(rowid1, trnid4).values[3], 14)
-        self.assertFalse( self.db.getRow(rowid3, trnid4))
+        self.assertFalse(self.db.getRow(rowid3, trnid4))
         self.assertEqual(self.db.getRow(rowid4, trnid4).values[0], 40)
         self.assertEqual(self.db.sdb.b1.array[rowid4],1)
         self.assertTrue(self.db.rollback(trnid4))  
