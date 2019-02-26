@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bcad480-0f0b-450e-8833-97fa5479678a" name="Default Changelist" comment="" />
+    <list default="true" id="5bcad480-0f0b-450e-8833-97fa5479678a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sdbv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdbv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/student.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/student.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vc_test_part3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vc_test_part3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week_7/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vc_test_part3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+            <state relative-caret-position="1035">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
               <folding>
                 <element signature="e#13#31#0" expanded="true" />
               </folding>
@@ -22,79 +28,38 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vc_test_part2a.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vc_test_part2b.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vc_grading_tesst.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sdbv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
                 <element signature="e#1178#1286#0" />
-                <element signature="e#1308#1410#0" />
-                <element signature="e#1923#2031#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sdb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3690" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/demo2.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/demo3.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/demo4.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/demo5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sdbindex.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -111,11 +76,12 @@
         <option value="$PROJECT_DIR$/src/sdbvm.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/src/vc_test_part3.py" />
+        <option value="$PROJECT_DIR$/src/vc_grading_tesst.py" />
         <option value="$PROJECT_DIR$/src/sdbv.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
     <option name="y" value="25" />
     <option name="width" value="960" />
@@ -127,6 +93,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,11 +119,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Week_7" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -171,70 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in vc_test_part3.py">
-    <configuration name="demo4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Week_5" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/demo4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="demo5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Week_5" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/demo5.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="index_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Week_5" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/index_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in vc_grading_tesst.py">
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Week_5" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,6 +159,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in vc_grading_tesst.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Week_5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/vc_grading_tesst.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in vc_test_part2a.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Week_5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/vc_test_part2a.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in vc_test_part2b.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Week_5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/vc_test_part2b.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in vc_test_part3.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Week_5" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in vc_grading_tesst.py" />
         <item itemvalue="Python tests.Unittests in vc_test_part3.py" />
+        <item itemvalue="Python tests.Unittests in vc_test_part2b.py" />
+        <item itemvalue="Python tests.Unittests in vc_test_part2a.py" />
         <item itemvalue="Python.scratch" />
-        <item itemvalue="Python.index_test" />
-        <item itemvalue="Python.demo5" />
-        <item itemvalue="Python.demo4" />
       </list>
     </recent_temporary>
   </component>
@@ -302,54 +247,55 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 14m 50s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 21h 51m 53s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 17m 59s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 21h 52m 27s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 19m 50s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 21h 54m 36s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 20m 39s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 21h 55m 18s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 21m 54s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 21h 56m 31s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 23m 08s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 21h 58m 48s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 23m 35s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 22h 00m 14s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 26m 17s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 22h 01m 03s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 32m 15s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 22h 01m 09s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_vc_test_part3_py - 2019.02.18 at 21h 32m 45s.xml">
-      <configuration name="Unittests in vc_test_part3.py" configurationId="tests" />
+    <history-entry file="Unittests_in_vc_grading_tesst_py - 2019.02.25 at 22h 05m 11s.xml">
+      <configuration name="Unittests in vc_grading_tesst.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14232999" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14232999" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2974473" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2974473" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -360,32 +306,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="2/19" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/vc_test_part2a.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sdbvm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdbvm.py" />
     <entry file="file://$PROJECT_DIR$/src/sdbvh.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1620">
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vc_test_part2b.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="37" column="56" lean-forward="true" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -399,6 +326,9 @@
     <entry file="file://$PROJECT_DIR$/src/demo1.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdb.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -410,7 +340,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
+        <state>
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -428,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sdbindex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="819">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
@@ -440,30 +370,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sdb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3690" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/vc_test_part3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+        <state relative-caret-position="1035">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
           <folding>
             <element signature="e#13#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/vc_test_part2a.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vc_test_part2b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vc_grading_tesst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sdbv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#1178#1286#0" />
-            <element signature="e#1308#1410#0" />
-            <element signature="e#1923#2031#0" />
           </folding>
         </state>
       </provider>

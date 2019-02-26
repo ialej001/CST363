@@ -110,15 +110,6 @@ class SimpleDBV():
                     if self.rollback(version_id):  # returns true if rollback was successful
                         return False  # don't commit anything, end function
 
-                # create old change record
-                old_record = ChangeRecord(version_id, ChangeRecord.BEFORE, record.rowid,
-                                                  self.sdb.getRawRow(record.rowid))
-                if record.rowid not in self.row_history.keys():  # create new key(rowid) and add old record
-                    self.row_history[record.rowid] = [old_record]
-                else:
-                    self.row_history[record.rowid].insert(0, old_record)  # insert old record to first entry in rowid
-                self.row_versionid[record.rowid] = self.getNextId()
-
                 # proceed to change actual database
                 if record.kind == 1:  # insert
                     self.sdb.insertRawRowId(record.rowid, record.change)
@@ -127,6 +118,15 @@ class SimpleDBV():
                     self.sdb.updateRawRow(record.rowid, record.change)
                 elif record.kind == 3:  # delete
                     self.sdb.deleteRow(record.rowid)
+
+                # create old change record
+                old_record = ChangeRecord(version_id, ChangeRecord.BEFORE, record.rowid,
+                                                  self.sdb.getRawRow(record.rowid))
+                if record.rowid not in self.row_history.keys():  # create new key(rowid) and add old record
+                    self.row_history[record.rowid] = [old_record]
+                else:
+                    self.row_history[record.rowid].insert(0, old_record)  # insert old record to first entry in rowid
+                self.row_versionid[record.rowid] = self.getNextId()
             return True  # all changes executed successfully
         except:
             return False

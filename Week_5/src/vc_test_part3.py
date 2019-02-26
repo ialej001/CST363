@@ -25,7 +25,6 @@ class TestSdbVC(unittest.TestCase):
         rowid2 = self.db.insertRow(Row(self.db.schema, [20, "david", "math", 25]), trnid)
         rowid3 = self.db.insertRow(Row(self.db.schema, [30, "ana", "cs", 45]), trnid)
         self.assertTrue(self.db.commit(trnid))
-        print('commit 1 - testcommit')
         trnid2 = self.db.startTransaction()
         row4 = self.db.getRow(rowid1, trnid2)
         self.assertEqual(row4.values[0], 10)
@@ -34,22 +33,18 @@ class TestSdbVC(unittest.TestCase):
         row6 = self.db.getRow(rowid3, trnid2)
         self.assertEqual(row6.values[0], 30)
         self.assertTrue(self.db.commit(trnid2))
-        print('commit 2 - testcommit')
 
     def test_isolation_rr(self):
         trnid = self.db.startTransaction()
         rowid1 = self.db.insertRow(Row(self.db.schema, [10, "tom", "cs", 10]), trnid)
         rowid2 = self.db.insertRow(Row(self.db.schema, [20, "david", "math", 25]), trnid)
         rowid3 = self.db.insertRow(Row(self.db.schema, [30, "ana", "cs", 45]), trnid)
-        print('isolation', rowid1, rowid2, rowid3)
         self.assertTrue(self.db.commit(trnid))
-        print('commit 1 - isolation')
         trnid2 = self.db.startTransaction()
         rowt2 = self.db.getRow(rowid1, trnid2)
         rowt2.values[3] = 14
         self.db.updateRow(rowid1, rowt2, trnid2)
         trnid3 = self.db.startTransaction()
-        print(trnid3)
         #      trnid2       trnid3       trnid4
         #      getRow(0)
         #      updateRow(0) start()
@@ -64,11 +59,9 @@ class TestSdbVC(unittest.TestCase):
         rowt3 = self.db.getRow(rowid1, trnid3)
         self.assertEqual(rowt3.values[3], 10)
         self.assertTrue(self.db.commit(trnid2))
-        print('commit 2 - isolation')
         rowt3 = self.db.getRow(rowid1, trnid3)
         self.assertEqual(rowt3.values[3], 10)
         self.assertTrue(self.db.commit(trnid3))
-        print('commit 3 - isolation')
         trnid4 = self.db.startTransaction()
         rowt4 = self.db.getRow(rowid1, trnid4)
         self.assertEqual(rowt4.values[3], 14)
@@ -81,7 +74,6 @@ class TestSdbVC(unittest.TestCase):
         rowid2 = self.db.insertRow(Row(self.db.schema, [20, "david", "math", 25]), trnid)
         rowid3 = self.db.insertRow(Row(self.db.schema, [30, "ana", "cs", 45]), trnid)
         self.assertTrue(self.db.commit(trnid))
-        print('commit 1 - rollback')
         trnid2 = self.db.startTransaction()
         rowt2 = self.db.getRow(rowid1, trnid2)
         rowt2.values[3] = 14
@@ -101,11 +93,9 @@ class TestSdbVC(unittest.TestCase):
         rowt3 = self.db.getRow(rowid1, trnid3)
         self.assertEqual(rowt3.values[3], 10)
         self.assertTrue(self.db.rollback(trnid2))
-        print('rollback 1 - rollback')
         rowt3 = self.db.getRow(rowid1, trnid3)
         self.assertEqual(rowt3.values[3], 10)
         self.assertTrue(self.db.rollback(trnid3))
-        print('rollback 2 - rollback')
         trnid4 = self.db.startTransaction()
         rowt4 = self.db.getRow(rowid1, trnid4)
         self.assertEqual(rowt4.values[3], 10)
@@ -118,7 +108,6 @@ class TestSdbVC(unittest.TestCase):
         rowid2 = self.db.insertRow(Row(self.db.schema, [20, "david", "math", 25]), trnid)
         rowid3 = self.db.insertRow(Row(self.db.schema, [30, "ana", "cs", 45]), trnid)
         self.assertTrue(self.db.commit(trnid))
-        print('commit 1 - conflict')
         trnid2 = self.db.startTransaction()
         rowt2 = self.db.getRow(rowid1, trnid2)
         rowt2.values[3] = 14
@@ -139,14 +128,11 @@ class TestSdbVC(unittest.TestCase):
         rowt3.values[3] = 16
         self.db.updateRow(rowid1, rowt3, trnid3)
         self.assertTrue(self.db.commit(trnid3))
-        print('commit 2 - conflict')
         self.assertFalse(self.db.commit(trnid2))
-        print('commit 3 - conflict')
         trnid4 = self.db.startTransaction()
         rowt4 = self.db.getRow(rowid1, trnid4)
         self.assertEqual(rowt4.values[3], 16)
         self.assertTrue(self.db.commit(trnid4))
-        print('commit 4 - conflict')
 
 
 if __name__ == '__main__':
